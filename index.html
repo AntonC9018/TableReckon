@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="img/rg.ico">
+    <title>Reckon grades</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css.css"></link>
+
+  </head>
+  <body>
+    <h1>Calculate average grade</h1>
+    <p><strong>Shortcuts</strong><br>
+      <i>1 through 0</i>: Add a grade of 1 through 10 correspondingly (0 = 10)<br>
+      <i>Delete</i>: Delete the student you are focused on (the last in case of no focus)<br>
+      <i>Space</i>: Add a new student<br>
+      <i>Up-Arrow</i>: Refocus to the next student (the first one if the end had been reached)<br>
+      <i>Down-Arrow</i>: Refocus to the previous student (the last one if the first is under the focus)<br>
+      <i>Enter</i>: Download the spreadsheet with grades entered (also submit button)<br>
+    </p>
+    <form><input type="checkbox" class="alwaysShow">Keep minus buttons and input boxes lit</form>
+    <a><button class="submit">Submit</button></a>
+    <div class="container">
+    </div>
+  </body>
+  <script>window.$ = window.jQuery = require('jquery');</script>
+  <script type="text/javascript" src="submit.js"></script>
+  <script type="text/javascript" src="studentFactory.js"></script>
+  <script type="text/javascript" src="functions.js"></script>
+  <script type="text/javascript" src="js.js"></script>
+</html>

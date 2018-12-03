@@ -1,0 +1,144 @@
+
+div.person {
+  width: auto;
+  border: 2px solid black;
+  padding: 16px;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.container {
+  padding: 10px;
+  display: grid;
+  grid-gap: 3px;
+}
+
+.container {
+  width: 740px;
+}
+
+@media only screen and (max-width: 768px) {
+  .grades {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+  .container {
+    width: 570px !important;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .grades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .container {
+    margin: 3px;
+    padding-left: 0;
+    padding-right: 5px !important;
+    width: 100% !important;
+  }
+}
+
+.grades {
+  padding: 10px 20px 10px 20px;
+  border: 2px solid black;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 3px;
+  align-items: top;
+}
+
+button {
+  color: white;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+
+
+  /* text-align: center;
+  display:table-cell; */
+}
+
+.but-great {
+  background-color: rgb(111, 208, 87);
+  border-color: rgb(111, 208, 87);
+}
+
+.but-good {
+  background-color: rgb(180, 214, 116);
+  border-color: rgb(180, 214, 116);
+}
+
+.but-mediocre {
+  background-color: rgb(223, 177, 74);
+  border-color: rgb(223, 177, 74);
+}
+
+.but-bad {
+  background-color: rgb(222, 45, 45);
+  border-color: rgb(222, 45, 45);
+}
+
+.controls {
+  grid-column: 6;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  grid-column-gap: 5px;
+  padding: 0 5px 0 5px;
+}
+
+.plus {
+  width: 42px;
+  height: 42px;
+  font-size: 32px;
+  color: black;
+  grid-column: 1;
+
+  background-color: rgb(111, 208, 87) !important;
+  border-color: rgb(111, 208, 87) !important;
+}
+
+.delete {
+  width: 42px;
+  height: 42px;
+  font-size: 32px;
+  color: black;
+  grid-column: 2;
+
+  background-color: rgb(222, 45, 45) !important;
+  border-color: rgb(222, 45, 45) !important;
+}
+
+.minus {
+  text-align:center;
+  font-size: 13px;
+  color: black;
+  height: 20px;
+  background-color: rgb(201, 86, 176) !important;
+  border-color: rgb(201, 86, 176) !important;
+}
+
+input.grade {
+  width: 28px;
+  text-align: center;
+}
+
+button.submit {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  font-size: 30px;
+  color: black;
+  background-color: rgb(145, 209, 207);
+  border-color: rgb(145, 209, 207);
+}
